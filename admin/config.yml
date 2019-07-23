@@ -1,0 +1,25 @@
+backend:
+  name: gitlab
+  repo: archibase/corporate_website # Path to your GitLab repository
+  auth_type: implicit # Required for implicit grant
+  app_id: efdaec68e19bed5b3af67d2973b6a31a3727546826f50c54ae8f76493e3d961b # Application ID from your GitLab settings
+  auth_endpoint: oauth/authorize
+
+media_folder: source/images/
+public_folder: /images/
+
+collections:
+- name: "blog" # Used in routes, e.g. /admin/collections/blog
+  label: "Blog" # Used in the UI
+  folder: "source/_posts" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime", default: ""}
+    - {label: "Categories", name: "categories", widget: "list", default: ""}
+    - {label: "Image", name: "image", widget: "image", default: ""}
+    - {label: "Content", name: "body", widget: "markdown"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+  meta:
+    - {label: "Tags", name: "tags", widget: "list", default: "" }
