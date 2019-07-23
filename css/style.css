@@ -3738,6 +3738,38 @@ textarea.c-input--full, textarea.c-input {
         .p-post__content h4 {
           font-size: 1.6rem;
           line-height: 2.4rem; } }
+  .p-post__share {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center; }
+    @media screen and (max-width: 767px) {
+      .p-post__share {
+        margin-top: 40px; } }
+    .p-post__share__btn {
+      width: 90px;
+      text-decoration: none;
+      display: block;
+      margin: 0 20px; }
+      @media screen and (max-width: 767px) {
+        .p-post__share__btn {
+          margin: 0 13.5px; } }
+      .p-post__share__btn img {
+        vertical-align: middle;
+        height: 30px; }
+      .p-post__share__btn span {
+        vertical-align: middle;
+        margin-left: 10px;
+        font-size: 1.2rem; }
+        @media screen and (max-width: 767px) {
+          .p-post__share__btn span {
+            font-size: 1rem;
+            margin-left: 5px; } }
+      .p-post__share__btn.-facebook {
+        color: #475993; }
+      .p-post__share__btn.-twitter {
+        color: #50ABF1; }
+      .p-post__share__btn.-line {
+        color: #00C200; }
 
 .p-contact {
   max-width: 1020px;
