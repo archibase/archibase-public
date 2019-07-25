@@ -3540,7 +3540,8 @@ textarea.c-input--full, textarea.c-input {
     .p-job-list h1 a {
       color: #333333; }
       .p-job-list h1 a:hover {
-        text-decoration: underline; }
+        text-decoration: underline;
+        color: #6C6C6C; }
     .p-job-list h1:before {
       content: "";
       position: absolute;
