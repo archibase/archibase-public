@@ -3538,7 +3538,6 @@ textarea.c-input--full, textarea.c-input {
       .p-job-list h1 {
         font-size: 1.8rem; } }
     .p-job-list h1 a {
-      text-decoration: none;
       color: #333333; }
       .p-job-list h1 a:hover {
         text-decoration: underline; }
